@@ -1,0 +1,1 @@
+/home/gokay/Desktop/Makefile_Ders/makefile2/cmake_ile/build/CMakeFiles/makefile2.dir

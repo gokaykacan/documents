@@ -1,0 +1,38 @@
+
+INCDIR=./include
+
+CC=gcc
+CFLAGS=-I$(INCDIR)
+
+OBJDIR=./obj
+
+_DEPS = hellomake.h hellotest.h
+DEPS = $(patsubst %,$(INCDIR)/%,$(_DEPS))
+
+_OBJ = hellomake.o hellofunc.o
+OBJ = $(patsubst %,$(OBJDIR)/%,$(_OBJ))
+
+.PHONY: clean printrule all
+
+all: make_objdir hellomake
+
+make_objdir:
+	mkdir $(OBJDIR)
+
+$(OBJDIR)/%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+hellomake: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+printrule:
+	echo $(DEPS)
+	echo
+	echo $(OBJ)
+	echo
+
+clean: 
+	rm -f $(OBJDIR)/*.o
+	rm -rf $(OBJDIR)
+	rm hellomake
+

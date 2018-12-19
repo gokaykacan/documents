@@ -1,0 +1,3 @@
+
+void myPrintHelloMakeLib(void);
+

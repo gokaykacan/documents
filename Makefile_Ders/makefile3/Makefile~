@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-I.
+DEPS = hellomake.h hellotest.h
+OBJ = hellomake.o hellofunc.o
+
+.PHONY: clean make_output_dirs bin
+
+%.o: %.c $(DEPS)
+	@$(CC) -c -o $@ $< $(CFLAGS)
+
+hellomake: hellomake.o hellofunc.o
+	@$(CC) -o hellomake hellomake.o hellofunc.o $(CFLAGS)
+
+clean:
+	@echo "Cleaning objects..."
+	@rm -f $(OBJ)
+

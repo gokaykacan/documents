@@ -1,0 +1,1 @@
+/home/gokay/Desktop/Makefile_Ders/makefile1/cmake/build/CMakeFiles/helloMake.dir

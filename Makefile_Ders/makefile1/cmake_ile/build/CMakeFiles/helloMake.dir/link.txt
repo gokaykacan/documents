@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libhelloMake.so -o libhelloMake.so CMakeFiles/helloMake.dir/src/hellofunc.c.o CMakeFiles/helloMake.dir/src/hellomake.c.o 

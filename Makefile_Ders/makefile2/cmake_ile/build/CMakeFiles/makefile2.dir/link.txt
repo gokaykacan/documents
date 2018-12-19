@@ -1,0 +1,2 @@
+/usr/bin/ar cr libmakefile2.a  CMakeFiles/makefile2.dir/src/hellofunc.c.o CMakeFiles/makefile2.dir/src/hellomake.c.o
+/usr/bin/ranlib libmakefile2.a

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/hellomake.h
+
+/home/gokay/Desktop/Makefile_Ders/makefile1/cmake/src/hellofunc.c
+stdio.h
+-
+hellomake.h
+/home/gokay/Desktop/Makefile_Ders/makefile1/cmake/src/hellomake.h
+
+/home/gokay/Desktop/Makefile_Ders/makefile1/cmake/src/hellomake.c
+stdlib.h
+-
+hellomake.h
+/home/gokay/Desktop/Makefile_Ders/makefile1/cmake/src/hellomake.h
+

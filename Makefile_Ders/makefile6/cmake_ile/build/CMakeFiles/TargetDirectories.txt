@@ -1,0 +1,1 @@
+/home/gokay/Desktop/Makefile_Ders/makefile6/cmake_ile/build/CMakeFiles/hellofunction.dir
