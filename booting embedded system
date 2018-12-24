@@ -1,0 +1,46 @@
+
+ROM->Bootloader(u-boot)->Kernel->Operating System
+
+Boot Sequence
+
+A Quick View of The Generic Boot Sequence
+Power up ROM Boot loader Operating system
+Think About It
+We need an operating system since it has the full power of machine controlling.
+
+But why should we need “ROM” and “boot loader”?
+
+One Line Answer
+It's all about the preparation.
+
+Let's take a look at what they do before the operating system starting up.
+
+ROM
+Think this step as a basic hardware initialization.
+
+Which components have been intialized?
+
+The core mudules, such as:
+
+CPU (at least one)
+RAM (maybe only built-in)
+I/Os (optional)
+Satisfy Von Neumann architecture so that we can execute the instructinos (of the boot loader).
+
+Boot Loader
+What things have been done with the “boot loader”?
+
+CPU
+RAM
+I/Os (optional)
+File system (optional)
+We are now able to launch operating system.
+
+Operating System
+“Operating systems are designed as if they never start or stop, ...”
+So we temporarily omit it here.
+
+It's so-called chain loading
+The general introduction ends up.
+
+Let's check out what OMAP4-design does.
